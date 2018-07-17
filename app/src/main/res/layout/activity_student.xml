@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F7FF"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:text="未通过"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/lv_not_pass"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="15dp"
+        android:background="#FFFFFF"
+        ></ListView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:text="已通过"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/lv_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"></ListView>
+
+</LinearLayout>

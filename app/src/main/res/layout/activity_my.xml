@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="25dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_set_my_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:text="头像"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/img_set_my_head"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="65dp"
+            android:layout_marginTop="15dp"
+            app:actualImageScaleType="centerCrop"
+            app:placeholderImage="@drawable/default_head"
+            app:roundAsCircle="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/go" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="5dp"
+        android:background="#cccccc" />
+
+    <RelativeLayout
+        android:id="@+id/rl_set_my_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/name"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_set_my_name"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:gravity="center"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:text="未知"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/et_set_my_name"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/go" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="5dp"
+        android:background="#cccccc" />
+
+    <!--<RelativeLayout
+        android:id="@+id/rl_set_my_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/sex"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner_gender"
+            style="@style/spinner_style"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:gravity="center"
+            android:prompt="@string/sex"
+            android:spinnerMode="dialog" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/spinner_gender"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/go" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="5dp"
+        android:background="#cccccc" />-->
+
+    <RelativeLayout
+        android:id="@+id/rl_set_my_school"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/school"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_set_school"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:gravity="center"
+            android:maxLength="15"
+            android:singleLine="true"
+            android:text="未知"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/et_set_school"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/go" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="5dp"
+        android:background="#cccccc" />
+
+    <!--<RelativeLayout
+        android:id="@+id/rl_set_my_school_class"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:text="年级"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        &lt;!&ndash;<TextView
+            android:id="@+id/tv_set_my_sch_class"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:gravity="center"
+            android:text="未知"
+            android:textSize="16sp"
+            />&ndash;&gt;
+
+        <Spinner
+            android:id="@+id/spinner_school_class"
+            style="@style/spinner_style"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:gravity="center"
+            android:prompt="@string/selete_y"
+            android:spinnerMode="dialog" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/spinner_school_class"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/go" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="5dp"
+        android:background="#cccccc" />
+
+    <RelativeLayout
+        android:id="@+id/rl_set_my_class"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/curr_class"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        &lt;!&ndash;<TextView
+            android:id="@+id/tv_set_my_class"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:gravity="center"
+            android:text="未知"
+            android:textSize="16sp" />&ndash;&gt;
+
+        <Spinner
+            android:id="@+id/spinner_class"
+            style="@style/spinner_style"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:prompt="@string/selete_class"
+            android:spinnerMode="dialog" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/spinner_class"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/go" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc" />-->
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_bg2"
+        android:text="确认修改"
+        android:textSize="16sp" />
+</LinearLayout>

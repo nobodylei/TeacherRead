@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F7FF"
+    android:scrollbars="vertical">
+
+    <SearchView
+        android:id="@+id/sv_book_stack"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/search_view_line"
+        android:iconifiedByDefault="false"
+        android:queryHint="@string/search_book_hint"></SearchView>
+
+
+    <ListView
+        android:id="@+id/lv_book_stack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_release_ok"
+        android:layout_below="@id/sv_book_stack"
+        android:scrollbars="vertical"></ListView>
+
+    <TextView
+        android:id="@+id/tv_have_book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_release_ok"
+        android:background="#33000000"
+        android:gravity="center"
+        android:maxLength="30"
+        android:text="已选择书籍"
+        android:textSize="14sp"
+        android:visibility="gone"
+         />
+
+    <Button
+        android:id="@+id/btn_release_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#3FEBBB"
+        android:gravity="center"
+        android:text="确定发布"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>

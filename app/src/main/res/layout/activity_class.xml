@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_class_msg"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:background="@drawable/class_bg">
+
+        <TextView
+            android:id="@+id/tv_class_msg_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="55dp"
+            android:background="#8ce6c3"
+            android:text="复仇者联盟"
+            android:textColor="#333333"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_class_msg_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:text="班级ID：9527" />
+
+        <TextView
+            android:id="@+id/tv_class_msg_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:text="班级人数:27" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_teacher_student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_class_msg"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_teacher"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="25dp"
+                android:src="@drawable/teacher" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="教师详情"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="#ccc" />
+
+        <LinearLayout
+            android:id="@+id/ll_student"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="25dp"
+                android:src="@drawable/student" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="学生管理"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/ll_teacher_student"
+        android:background="#ccc" />
+
+    <TextView
+        android:id="@+id/tv_class_task"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/v_line"
+        android:gravity="center"
+        android:text="闯关任务"
+        android:textColor="#333333"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <!--<RelativeLayout
+        android:id="@+id/rl_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_class_task"
+        android:layout_margin="10dp"
+        android:background="#f7f5f5"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_task_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="2018年10月1日结束"
+            android:textColor="#333333" />
+
+        &lt;!&ndash;<ImageView
+            android:id="@+id/img_task_book_one"
+            android:layout_width="60dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="25dp"
+            android:src="@mipmap/ic_launcher" />&ndash;&gt;
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/img_task_book_one"
+            android:layout_width="75dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="25dp"
+            app:placeholderImage="@drawable/nothing"
+            app:placeholderImageScaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/tv_task_book_one_name"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/img_task_book_one"
+            android:layout_below="@id/img_task_book_one"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#333333" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/img_task_book_two"
+            android:layout_width="75dp"
+            android:layout_height="110dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            app:placeholderImage="@drawable/nothing"
+            app:placeholderImageScaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/tv_task_book_two_name"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/img_task_book_two"
+            android:layout_below="@id/img_task_book_two"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#333333" />
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/img_task_book_three"
+            android:layout_width="75dp"
+            android:layout_height="110dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="25dp"
+            app:placeholderImage="@drawable/nothing"
+            app:placeholderImageScaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/tv_task_book_three_name"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/img_task_book_three"
+            android:layout_below="@id/img_task_book_three"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#333333" />
+    </RelativeLayout>-->
+
+    <GridView
+        android:id="@+id/gv_game_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_class_task"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="25dp"
+        android:visibility="gone"></GridView>
+
+    <TextView
+        android:id="@+id/tv_none_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_class_task"
+        android:layout_marginTop="45dp"
+        android:gravity="center"
+        android:text="还没有闯关任务，快去发布吧!"
+        android:textSize="16sp" />
+
+</RelativeLayout>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F7FF">
+
+    <RelativeLayout
+        android:id="@+id/rl_home"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:background="#48EBBE">
+
+        <!--<LinearLayout
+            android:id="@+id/layout_home_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="25dp"
+            android:background="#fff"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入要搜索的书籍" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:text="搜索"
+                android:textSize="18sp" />
+        </LinearLayout>-->
+
+        <!-- <ImageView
+             android:id="@+id/img_home"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_below="@id/sv_book_serch"
+             />-->
+        <RelativeLayout
+            android:id="@+id/layout_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/sv_book_serch"
+            android:layout_marginTop="8dp"
+            android:background="#48EBBE">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v4.view.ViewPager>
+
+            <LinearLayout
+                android:id="@+id/viewPager_lineatLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/select"
+                    android:padding="5dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/nomal"
+                    android:padding="5dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/nomal"
+                    android:padding="5dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <SearchView
+            android:id="@+id/sv_book_serch"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/search_view_line"
+            android:iconifiedByDefault="false"
+            android:queryHint="@string/search_book_hint"></SearchView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_create_class_shop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_home"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:paddingTop="4dp">
+
+        <LinearLayout
+            android:id="@+id/ll_create_class"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/create_calss" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="创建班级"
+                android:textColor="#333333"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_teacher_proof"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:src="@drawable/proof" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="教师认证"
+                android:textColor="#333333"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="#cccccc" />
+
+        <LinearLayout
+            android:id="@+id/ll_book_stack"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/book_stack" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="书库"
+                android:textColor="#333333"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="#cccccc" />
+
+        <LinearLayout
+            android:id="@+id/ll_book_plan"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/plan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="阅读规划"
+                android:textColor="#333333"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="#cccccc" />
+
+        <LinearLayout
+            android:id="@+id/ll_book_shop"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/book_shop_home" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="书店"
+                android:textColor="#333333"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_class_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_create_class_shop"
+        android:layout_marginTop="15dp"
+        android:background="#FFFFFF"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_book_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingLeft="18dp"
+            android:paddingTop="5dp"
+            android:text="班级列表"
+            android:textColor="#353535"
+            android:textSize="18sp" />
+
+        <ListView
+            android:id="@+id/lv_class_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_book_list"
+            android:scrollbars="vertical"></ListView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_create_class_shop"
+        android:layout_marginTop="65dp"
+        android:gravity="center_horizontal"
+        android:text="认证成功后才能创建班级"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!--<TextView
+        android:id="@+id/tv_book_list_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_book_list"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:paddingRight="15dp"
+        android:text="@string/more"
+        android:textColor="#87dcad" />-->
+
+</RelativeLayout>

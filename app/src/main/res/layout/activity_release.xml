@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F7FF"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="阅读任务名称"
+        android:textColor="#303030"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_task_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:hint="例如：5月阅读计划"
+        android:padding="15dp"
+        android:singleLine="true"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="阅读任务说明"
+        android:textColor="#303030"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_explain"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#FFFFFF"
+        android:gravity="left|top"
+        android:hint="可在任务说明中添加此次任务的目标"
+        android:inputType="textMultiLine"
+        android:minLines="6"
+        android:padding="15dp"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_add_book"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/btn_bg1"
+        android:text="添加书籍"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

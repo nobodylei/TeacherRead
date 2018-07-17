@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rjwl.reginet.teacherread.activity.MainActivity">
+    <!--展示内容界面的-->
+    <LinearLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:background="#FBFBFB"
+        android:orientation="vertical"></LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/layout_bottom"
+        android:background="#e0e7e4" />
+
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/rg_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_home"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/home"
+                android:gravity="center_horizontal"
+                android:text="@string/home"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/rb_my"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/my2"
+                android:gravity="center_horizontal"
+                android:text="@string/my"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+</RelativeLayout>

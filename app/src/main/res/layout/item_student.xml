@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:gravity="center_vertical"
+    android:paddingLeft="25dp">
+
+    <!--<com.rjwl.reginet.xinread.utils.MyImageView
+        android:id="@+id/img_student_head"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="10dp"
+        android:layout_gravity=""
+        android:src="@drawable/default_head" />-->
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/img_student_head"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        app:actualImageScaleType="centerCrop"
+        app:placeholderImage="@drawable/default_head"
+        app:roundAsCircle="true" />
+
+    <TextView
+        android:id="@+id/tv_mystudent_name"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="10dp"
+
+        android:textColor="#535353"
+        android:text="@string/nothing"
+        android:textSize="16sp" />
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"
+        android:layout_below="@id/tv_mystudent_name"
+        android:layout_margin="5dp"
+        />-->
+    <Button
+        android:id="@+id/btn_ok_student"
+        android:layout_width="75dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:text="通过"
+        android:background="@drawable/btn_bg1"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F7FF">
+
+    <TextView
+        android:id="@+id/tv_class_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:text="班级名称"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_class_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_class_name"
+        android:background="#FFFFFF"
+        android:hint="为你的班级取一个响亮的名字"
+        android:maxLength="20"
+        android:textSize="16sp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp" />
+
+    <TextView
+        android:id="@+id/tv_grade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_class_name"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:text="所属年级"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/spinner_grade"
+        style="@style/spinner_style"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/tv_grade"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:prompt="@string/selete_y"
+        android:spinnerMode="dialog" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/spinner_grade"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/spinner_grade"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/go" />
+
+    <Button
+        android:id="@+id/btn_create_class"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg1"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/spinner_grade"
+        android:layout_marginTop="65dp"
+        android:text="创建班级"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+</RelativeLayout>
